@@ -36,3 +36,12 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
 * Web-based Online Editors
   * www.sharelatex.com
   * www.writelatex.com
+
+## Get Start
+* Typesetting
+  * comment: % This is comment
+  * new line: \\
+  * spaces: \quad or \qquad
+  * print %, {, ...(use anti-slash before special character): \%, \{
+  * bold: \textbf{value}
+  * italic: \textit{value}
