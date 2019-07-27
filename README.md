@@ -17,7 +17,7 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
 * Free.
 
 ## MS Word vs LaTeX
-![word vs latex](screenshots/latexvsword.png)
+<img src="screenshots/latexvsword.png" width="350" alt="word vs latex">
 
 ## How does it work?
 1. You write your document in plain text with commands that describe its structure and meaning.
@@ -39,9 +39,9 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
 
 ## Get Start
 * Typesetting
-  * comment: % This is comment
-  * new line: \\
-  * spaces: \quad or \qquad
-  * print %, {, ...(use anti-slash before special character): \%, \{
-  * bold: \textbf{value}
-  * italic: \textit{value}
+  * comment: `% this is comment`
+  * new line: `\\`
+  * spaces: `\quad` or `\qquad`
+  * print %, {, ...and more: `\%`, `\{`, ... (use anti-slash before special character)
+  * bold: `\textbf{value}`
+  * italic: `\textit{value}`
