@@ -118,6 +118,11 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
     Just simple Text
     \subsubsection{Title here}
   ```
+* Multi columns page
+  ```latex
+    \documentclass[twocolumn]{article}
+  ```
+
 * Packages
   ```latex
     \documentclass{article}
@@ -149,4 +154,51 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
       &=X^3+3X^2+3X+1
     \end{align*}
     \end{equation}
+  ```
+* Pictures
+  * simple picture
+  ```latex
+    \documentclass{article}
+    \usepackage{graphicx}
+    \begin{document}
+      \begin{figure}
+        \includegraphics{img_url}
+      \end{figure}
+    \end{document}
+  ```
+  * center
+    ```latex
+    \begin{figure}
+      \centering % make image in the center
+      \includegraphics{images/Blue.png}
+    \end{figure}
+    ```
+  * position
+    ```latex
+    \begin{figure}[!t] % make image in the (t:top, b:bottom, h:here, !:force[optional])
+      \includegraphics{images/Blue.png}
+    \end{figure}
+    ```
+  * width
+  ```latex
+    \begin{figure}
+      \caption{value} % name of photo (caption)
+      % change image width: 0.5\textwidth = 50% of the text width, 0.9\columnwidth = 90% of the column width
+      \includegraphics[width=0.5\textwidth]{images/Blue.png}
+    \end{figure}
+  ```
+  * caption
+    ```latex
+    \begin{figure}
+      \caption{value} % name of photo (caption)
+      \includegraphics{images/Blue.png}
+    \end{figure}
+    ```
+  * label
+  ```latex
+    mentioned in Fig. \ref{img_ref}
+    \begin{figure}
+      \caption{\label{img_ref}value}
+      \includegraphics{images/Blue.png}
+    \end{figure}
   ```

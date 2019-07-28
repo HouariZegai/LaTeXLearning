@@ -1,0 +1,44 @@
+\documentclass[twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\title{ \LaTeX}
+\begin{document}
+	\maketitle
+	
+	% simple picture
+	\begin{figure}
+		\includegraphics{images/V.png}
+	\end{figure}
+
+	mentioned in Fig. \ref{experiment}
+
+	% with parameter and specification
+	\begin{figure}[!h] % make image in the (t:top, b:bottom, h:here, !:force[optional])
+		\centering % make image in the center
+		\caption{\label{experiment}Logo of page} % name of photo (caption)
+		\includegraphics[width=0.9\textwidth]{images/Blue.png} % control width of image (change to 90% of the text width)
+	\end{figure}
+
+	\begin{figure}
+	\includegraphics[width=0.9\columnwidth]{images/Red.png} % change width to 90% of the column width
+	\end{figure}
+
+	% subfigures
+	\begin{figure}
+		\centering
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\textwidth](images/Red.png)
+			\caption{}
+			\label{fig:red_logo}
+		\end{subfigure}
+		~
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\textwidth](images/Blue.png)
+			\caption{}
+			\label{fig:blue_logo}
+		\end{subfigure}		
+		\caption{(a) Logo Red. (b) Logo Blue.}\label{fig:app_logo}
+	\end{figure}
+	
+\end{document}
