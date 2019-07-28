@@ -118,3 +118,35 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
     Just simple Text
     \subsubsection{Title here}
   ```
+* Packages
+  ```latex
+    \documentclass{article}
+    \usepackage{package_name} % add package
+    \begin{document}
+      Hello!
+    \end{document}
+  ```
+* Package > amsmath
+  ```latex
+    \documentclass{article}
+    \usepackage{amsmath} % use package (LaTeX will install package if not exist in your computer)
+    \begin{document}
+      \begin{equation*} % *: don't add number of equation
+        \sum
+    \end{equation*}
+
+    \begin{align*} % align equation..
+      (X+1)^3&=(X+1)(X+1)(X+1)\\
+      &=(X+1)(X^2 + 2X + 1)\\
+      &=X^3+3X^2+3X+1
+    \end{align*}
+    \end{document}
+
+    \begin{equation} % for add single number of equation
+    \begin{align*}
+      (X+1)^3&=(X+1)(X+1)(X+1)\\
+      &=(X+1)(X^2 + 2X + 1)\\
+      &=X^3+3X^2+3X+1
+    \end{align*}
+    \end{equation}
+  ```
