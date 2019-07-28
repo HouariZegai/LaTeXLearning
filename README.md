@@ -45,3 +45,4 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * print %, {, ...and more: `\%`, `\{`, ... (use anti-slash before special character)
   * bold: `\textbf{value}`
   * italic: `\textit{value}`
+  * underline: \underline{value}
