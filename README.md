@@ -45,4 +45,26 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * print %, {, ...and more: `\%`, `\{`, ... (use anti-slash before special character)
   * bold: `\textbf{value}`
   * italic: `\textit{value}`
-  * underline: \underline{value}
+  * underline: `\underline{value}`
+  * 3 dots: `\dots`
+* Math
+  * inline math mode: `$ value $`
+  * symbols: `\alpha`, `\beta`, `\omega`, ...
+  * sub-script: `X_2`
+  * sup-script: `X^2`
+  * multi sub or sup script: `x^{2x + 3}` or `x_{2x + 3}` (use brackets)
+  * merge between sub and sup script: `\sum_{k=1}^n`
+  * fractional: `d=\frac{5x}{y}`
+  * equation
+
+         \begin{equation}
+           \omega = \sum_{i=1}^{n}w_ix % content of equation
+         \end{equation}
+  * label in equation
+         
+         \begin{equation}
+           \label{omega eq} % name of equation used to refered
+           \omega = \sum_{i=1}^{n}w_ix
+         \end{equation}
+
+         \ref{omega eq}
