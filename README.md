@@ -24,20 +24,17 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
 2. The latex program processes your text and commands to produce a beautifully formatted document.
 
 ## Required Tools
-* Windows
-  * Compiler (MIKTeX)
-  * Editor (TeXstudio, Texmaker, ...)
-* Mac
-  * Compiler (MacTex)
-  * Editor (TeXstudio, ...)
-* Linux
-  * Compiler (TexLive)
-  * Editor (TeXstudio, ...)
-* Web-based Online Editors
+* Compiler
+  * Gnu/Linux (TexLive)
+  * Mac (MacTex)
+  * Windows (MIKTeX)
+* Editor
+  * TeXstudio, Texmaker, ...
+* Or use web-based Online Editors
   * www.sharelatex.com
   * www.writelatex.com
 
-## Get Start
+## Get Started
 * Typesetting
   * comment: `% this is comment`
   * new line: `\\`
@@ -56,15 +53,16 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * merge between sub and sup script: `\sum_{k=1}^n`
   * fractional: `d=\frac{5x}{y}`
   * equation
-
-         \begin{equation}
-           \omega = \sum_{i=1}^{n}w_ix % content of equation
-         \end{equation}
+  ```latex
+     \begin{equation}
+        \omega = \sum_{i=1}^{n}w_ix % content of equation
+     \end{equation}
+  ```
   * label in equation
-         
-         \begin{equation}
-           \label{omega eq} % name of equation used to refered
-           \omega = \sum_{i=1}^{n}w_ix
-         \end{equation}
-
-         \ref{omega eq}
+  ```latex
+     \begin{equation}
+        \label{omega eq} % name of equation used to refered
+        \omega = \sum_{i=1}^{n}w_ix
+        \end{equation}
+     \ref{omega eq}
+   ```
