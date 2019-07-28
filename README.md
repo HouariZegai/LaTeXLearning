@@ -66,3 +66,43 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
         \end{equation}
      \ref{omega eq}
    ```
+  * Lists
+    * unordered list
+    ```latex
+     \begin{itemize} % Unordered list
+        \item Stackoverflow
+        \item GitHub
+     \end{itemize}
+   ```
+   * unordered list
+    ```latex
+     \begin{itemize} % Unordered list
+        \item Stackoverflow
+        \item GitHub
+     \end{itemize}
+   ```
+   * ordered list
+    ```latex
+     \begin{enumerate} % Ordered list
+        \item HTML
+        \item CSS
+     \end{enumerate}
+   ```
+   * merge and list inside list
+   ```latex
+     \begin{enumerate} % list inside list
+     \item HTML
+        \begin{enumerate}
+          \item HTML4
+          \item HTML5
+        \end{enumerate}
+     \item CSS
+     \item PHP
+     \item JS framework
+        \begin{itemize}
+          \item Angular
+          \item React
+          \item Vue
+        \end{itemize}
+     \end{enumerate}
+   ```
