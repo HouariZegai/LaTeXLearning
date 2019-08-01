@@ -34,6 +34,9 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * www.sharelatex.com
   * www.writelatex.com
 
+## Useful links
+* https://en.wikibooks.org/wiki/LaTeX
+
 ## Get Started
 * Typesetting
   * comment: `% this is comment`
@@ -208,6 +211,10 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   ```
   * subfigures
   ```latex
+    \usepackage{graphicx}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \begin{document}
     \begin{figure*} % figure take all page with (in case we use twocolumn)
       \centering
       \begin{subfigure}[b]{0.45\columnwidth}
@@ -224,4 +231,22 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
       \caption{(a) Logo Red. (b) Logo Blue.}
       \label{fig:app_logo}
     \end{figure*}
+    \end{document}
   ```
+* Tables
+ ```latex
+  \usepackage{tabularx}
+  \begin{document}
+    \begin{table}[!h]
+      \begin{tabular}{|l|c|r|} % alignment of columns (l: left, r: right, c: center), |: columns separator (vertical ligne)
+        \hline % make ligne (separator)
+        Item & Qty & Unit \\ % row one
+        \hline
+        Widget & 1 & 199.99 \\
+        \hline
+        Gadget & 2 & 399.99 \\
+        \hline
+      \end{tabular}
+    \end{table}
+  \end{document}
+ ```
