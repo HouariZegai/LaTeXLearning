@@ -182,7 +182,6 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * width
   ```latex
     \begin{figure}
-      \caption{value} % name of photo (caption)
       % change image width: 0.5\textwidth = 50% of the text width, 0.9\columnwidth = 90% of the column width
       \includegraphics[width=0.5\textwidth]{images/Blue.png}
     \end{figure}
@@ -201,4 +200,28 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
       \caption{\label{img_ref}value}
       \includegraphics{images/Blue.png}
     \end{figure}
+  ```
+  * picture path
+  ```latex
+    \graphicspath{{images/}} % pictures path (folder)
+    \begin{document}
+  ```
+  * subfigures
+  ```latex
+    \begin{figure*} % figure take all page with (in case we use twocolumn)
+      \centering
+      \begin{subfigure}[b]{0.45\columnwidth}
+        \includegraphics[width=\textwidth]{images/Red.png}
+        \caption{}
+        \label{fig:red_logo}
+      \end{subfigure}
+      ~ % ~: beside, <new line (blank)>: bottom to
+      \begin{subfigure}[b]{0.45\columnwidth}
+        \includegraphics[width=\textwidth]{images/Blue.png}
+        \caption{}
+        \label{fig:blue_logo}
+      \end{subfigure}   
+      \caption{(a) Logo Red. (b) Logo Blue.}
+      \label{fig:app_logo}
+    \end{figure*}
   ```

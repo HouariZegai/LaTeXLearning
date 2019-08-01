@@ -1,14 +1,18 @@
 \documentclass[twocolumn]{article}
 \usepackage{graphicx}
+\graphicspath{{images/}} % images path (picture folder)
 \usepackage{caption}
 \usepackage{subcaption}
 \title{ \LaTeX}
 \begin{document}
 	\maketitle
 	
+\section{Introduction}
+This is the introduction of my work
+
 	% simple picture
 	\begin{figure}
-		\includegraphics{images/V.png}
+		\includegraphics{V.png}
 	\end{figure}
 
 	mentioned in Fig. \ref{experiment}
@@ -24,21 +28,26 @@
 	\includegraphics[width=0.9\columnwidth]{images/Red.png} % change width to 90% of the column width
 	\end{figure}
 
+\section{Related work}
+This is the related work of my document, the Fig. \ref{fig:app_logo} show the logos of my app, that contains two logo (Fig. \ref{fig:blue_logo} and Fig. \ref{fig:red_logo})
+
+
 	% subfigures
-	\begin{figure}
+	\begin{figure*} % *: figure take all page with (in case we use twocolumn)
 		\centering
 		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\textwidth](images/Red.png)
+			\includegraphics[width=\textwidth]{Red.png}
 			\caption{}
 			\label{fig:red_logo}
 		\end{subfigure}
-		~
+		~ % ~: beside, new line (blank ligne): bottom to
 		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\textwidth](images/Blue.png)
+			\includegraphics[width=\textwidth]{Blue.png}
 			\caption{}
 			\label{fig:blue_logo}
 		\end{subfigure}		
-		\caption{(a) Logo Red. (b) Logo Blue.}\label{fig:app_logo}
-	\end{figure}
+		\caption{(a) Logo Red. (b) Logo Blue.}
+		\label{fig:app_logo}
+	\end{figure*}
 	
 \end{document}
