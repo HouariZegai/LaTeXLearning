@@ -47,6 +47,7 @@ LaTeX encourages authors not to worry too much about the apprearance of their do
   * italic: `\textit{value}`
   * underline: `\underline{value}`
   * 3 dots: `\dots`
+  * Link: `\href{url}{description}`
 * Math
   * inline math mode: `$ value $`
   * symbols: `\alpha`, `\beta`, `\omega`, ...
